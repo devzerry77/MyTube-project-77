@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Watch</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage-compat.js"></script>
+</head>
+<body>
+
+<header>
+  <a href="index.html">⬅ Home</a>
+</header>
+
+<div class="watch-container">
+  <video id="videoPlayer" controls></video>
+  <h2 id="title"></h2>
+  <p id="channel"></p>
+  <button id="likeBtn">❤️ Like</button>
+  <p id="likesCount"></p>
+  <div class="comments">
+    <input id="commentInput" placeholder="Add comment">
+    <button onclick="addComment()">Post</button>
+    <div id="commentList"></div>
+  </div>
+</div>
+
+<script src="firebase-config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload Video</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="upload-box">
+  <h2>Upload Video</h2>
+  <input id="title" placeholder="Video Title">
+  <input id="channel" placeholder="Channel Name">
+  <input type="file" id="videoFile">
+  <button onclick="uploadVideo()">Upload</button>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="upload.js"></script>
+</body>
+</html>
